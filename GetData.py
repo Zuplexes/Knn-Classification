@@ -1,8 +1,8 @@
 import cv2
 import os
-
+#test2
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-name = 'surasek'
+name = '' #ใส่ชื่อ Label/ชื่อของตัวเอง
 os.makedirs('./data/' + name, exist_ok=True)
 j = 1
 
@@ -35,3 +35,5 @@ while True:
 # 5. สั่งปิดกล้องและคืนค่าระบบให้สมบูรณ์
 cap.release()
 cv2.destroyAllWindows()
+
+#กด s เพื่อ แคปรูป และ กด q เพื่อ หยุดการทำงาน
